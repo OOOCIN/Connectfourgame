@@ -1,0 +1,73 @@
+.App {
+    text-align: center;
+    height: 100vh; /* Make sure the app takes the full height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000; /* Light blue background color */
+  }
+  
+  .App-header {
+    background-color: #eb7d35; /* Changed to white for better contrast */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #333; /* Dark text color for contrast */
+    padding: 20px; /* Add some padding for spacing */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Slightly more pronounced shadow for depth */
+    max-width: 400px; /* Max width for the header */
+    margin: 20px; /* Add margin for responsiveness */
+  }
+  
+  h1 {
+    font-size: 2.5rem; /* Increase heading size */
+    margin: 15px 0; /* Add spacing around the main heading */
+  }
+  
+  h2, p {
+    margin: 10px 0; /* Spacing for the headings and paragraphs */
+    font-size: 1.2rem; /* Slightly larger font size for readability */
+  }
+  
+  /* Styling for the scoreboard */
+  h2 {
+    color: #1e72c7; /* Darker color for scoreboard */
+  }
+  
+  /* Centering the Connect Four game board */
+  .game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto; /* Center the container */
+  }
+  
+  /* Grid style for the game board */
+  .game-board {
+    display: grid;
+    grid-template-columns: repeat(7, 50px); /* Adjusted to fit the game columns */
+    gap: 5px; /* Space between the cells */
+    margin: 20px; /* Add margin for spacing */
+  }
+  
+  /* Individual cell styling */
+  .cell {
+    width: 50px; /* Cell width */
+    height: 50px; /* Cell height */
+    background-color: rgb(177, 6, 6); /* Default cell color */
+    border-radius: 50%; /* Make cells circular */
+    cursor: pointer; /* Cursor changes to pointer */
+    display: flex; /* Flexbox for centering */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+  }
+  
+  /* Add hover effect for cells */
+  .cell:hover {
+    background-color: #b0e0e6; /* Light blue hover effect */
+  }
+  
